@@ -3,7 +3,7 @@
 A comprehensive data pipeline for modeling annuity risk, projecting payouts, and analyzing profitability for insurance companies like Venerable Holdings.
 
 ## 🎯 Project Overview
-
+#mainyo
 This project simulates annuity contract lifecycles to help insurers:
 - **Forecast cash flows** from annuity payouts
 - **Model risk exposure** to longevity and market volatility  
@@ -92,7 +92,7 @@ python src/generate_synthetic_data.py
 ```
 
 This creates:
-- `data/annuity_policies.csv` (1,000 synthetic policies)
+- `data/annuity_policies.csv` (10,000 synthetic policies)
 - `data/market_returns.csv` (2000-2050 market data)
 - `data/mortality_rates.csv` (ages 45-100 mortality)
 
