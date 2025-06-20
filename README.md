@@ -3,7 +3,7 @@
 A comprehensive data pipeline for modeling annuity risk, projecting payouts, and analyzing profitability for insurance companies like Venerable Holdings.
 
 ## 🎯 Project Overview
-#main
+#mainyo
 This project simulates annuity contract lifecycles to help insurers:
 - **Forecast cash flows** from annuity payouts
 - **Model risk exposure** to longevity and market volatility  
