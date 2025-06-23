@@ -1,0 +1,22 @@
+-- Drop the table to ensure a clean start
+DROP TABLE IF EXISTS annuity_policies;
+
+-- Create the table with the CORRECT columns matching the CSV
+CREATE TABLE annuity_policies (
+    policy_id VARCHAR(50) PRIMARY KEY,
+    age INTEGER NOT NULL,
+    gender VARCHAR(1) NOT NULL,
+    start_date VARCHAR(10) NOT NULL,
+    deferral_years INTEGER NOT NULL,
+    initial_value DECIMAL(15,2) NOT NULL,
+    rider_type VARCHAR(20) NOT NULL,
+    has_death_benefit BOOLEAN NOT NULL,
+    death_benefit_type VARCHAR(20) NOT NULL,
+    has_beneficiary BOOLEAN NOT NULL,
+    me_fees DECIMAL(5,4) NOT NULL,
+    admin_fees DECIMAL(5,4) NOT NULL,
+    rider_fees DECIMAL(5,4) NOT NULL,
+    death_benefit_fees DECIMAL(5,4) NOT NULL,
+    total_fees DECIMAL(5,4) NOT NULL,
+    status VARCHAR(20) NOT NULL
+);
