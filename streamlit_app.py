@@ -15,7 +15,14 @@ import os
 
 # Add src directory to path to import our modules
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+from streamlit_auth0 import login_button
 
+# Auth0 login (put this right after imports)
+user_info = login_button()
+if user_info:
+    st.write(f"Welcome, {user_info['name']}!")
+else:
+    st.stop()
 # Import our Redshift extraction module
 from extract_from_redshift import main as extract_from_redshift
 
